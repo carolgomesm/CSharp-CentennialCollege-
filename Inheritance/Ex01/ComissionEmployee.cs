@@ -8,11 +8,6 @@ namespace Ex01
 {
     class ComissionEmployee : Employee
     {
-        //public int EmployeeID { get; set; }
-        //public string Name { get; set; }
-        //public string Department { get; set; }
-        //public string Address { get; set; }
-
         public double TotalSales { get; set; }
         public double ComRate { get; set; }
 
@@ -27,12 +22,6 @@ namespace Ex01
             {
                 return TotalSales * ComRate;
             }
-
-        //public void Print()
-        //{
-        //    Console.WriteLine("Employee ID: {0}\nName: {1}\nDepartment: {2}\nAdress:{3}\nTotal Sales: {4}\nComission: {5}\nEarnings:{6}\n", EmployeeID, Name, 
-        //        Department, Address, TotalSales, ComRate, Earnings());
-        //}
 
         public void Print()
         {

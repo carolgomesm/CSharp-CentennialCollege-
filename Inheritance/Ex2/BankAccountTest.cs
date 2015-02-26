@@ -14,9 +14,13 @@ namespace Ex2
             client.Print();
             Console.WriteLine();
 
-            SavingAccount client2 = new SavingAccount(3456, "Vanilda", 3000, 0.2);
+            SavingAccount client2 = new SavingAccount(client.AccountID, client.Name, client.Balance, 0.2);
             client2.CalculateInterest();
             client2.Print();
+
+            CheckingAccount client3 = new CheckingAccount(3009, "Carolina Miranda", 500, 0.05);
+            client3.Withdraw(100);
+            client3.Print();
 
         }
     }
